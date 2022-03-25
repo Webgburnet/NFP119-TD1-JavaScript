@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+		<link rel="stylesheet" href="petit.css"/>
+        <title>Questions</title>
+		<script src="petit.js"></script>
+    </head>
+    <body>
+		<!-- <img src="https://www.mapquestapi.com/staticmap/v5/map?key=ZVodyqDT7AUZtGGEs9cVsT0U3CD1og7L&center=50.608750,3.138155&zoom=14&size=500,500&type=sat" /> -->
+		
+	<script>
+		let lat= prompt("latitude ? ",50.609731);
+		console.log(lat);
+		let lon= prompt("longitude ? ",3.137511);
+		console.log(lon);
+		let zo= prompt("zoom ? ",14);
+		console.log(zo);
+		let aff= prompt("affichage ? ",500);
+		console.log(aff);
+		
+		document.writeln('<img src="https://www.mapquestapi.com/staticmap/v5/map?key=ZVodyqDT7AUZtGGEs9cVsT0U3CD1og7L&center=lat,lon&zoom=14&size=500,500&type=sat" />');
+	</script>
+    </body>
+</html>
